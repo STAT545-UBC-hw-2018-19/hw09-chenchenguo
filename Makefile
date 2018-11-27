@@ -1,26 +1,34 @@
-all: report.html lettercount.html
+all: data_dir report.html lettercount.html
 
 clean:
-	rm -f words.txt histogram.tsv histogram.png report.md report.html samechar.csv number.tsv numbhistogram.png lettercount.html
+	rm -rf data rest_files plot *.txt *.tsv *.csv *.html *.md *.png
 
+data_dir:
+	mkdir data
+	mkdir plot
+	mkdir rest_files
+
+words.txt:
+	Rscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = "words.txt", quiet = TRUE)'
+	
 report.html: report.rmd histogram.tsv histogram.png
 	Rscript -e 'rmarkdown::render("$<")'
 
-histogram.tsv: histogram.r words.txt
+histogram.tsv: ./src/histogram.r words.txt
 	Rscript $<
 
 histogram.png: histogram.tsv
 	Rscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("$<")); ggsave("$@")'
 	rm Rplots.pdf
 
-samechar.csv: samecharacter.r words.txt
+samechar.csv: ./src/samecharacter.r words.txt
 	Rscript $<
 
-number.tsv: charhistogram.r samechar.csv
+number.tsv: ./src/charhistogram.r samechar.csv
 	Rscript $<
 
 numbhistogram.png: number.tsv
-	Rscript -e 'library(ggplot2); ggplot(data=read.delim("$<"), aes(word_freq,freq))+geom_col()+xlab("Letter")+ylab("Appear frequency")+ggtitle("Number of words(start and end with same letter) for each letter"); ggsave("$@")'
+	Rscript -e 'library(ggplot2); ggplot(data=read.delim("$<"), aes(word_freq,data))+geom_col()+xlab("Letter")+ylab("Appear frequency")+ggtitle("Number of words(start and end with same letter) for each letter"); ggsave("$@")'
 	rm Rplots.pdf
 
 lettercount.html: lettercount.rmd histogram.tsv number.tsv numbhistogram.png
@@ -29,5 +37,10 @@ lettercount.html: lettercount.rmd histogram.tsv number.tsv numbhistogram.png
 #words.txt: /usr/share/dict/words
 #	cp $< $@
 
-words.txt:
-	Rscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = "words.txt", quiet = TRUE)'
+
+	
+	mv *.txt data
+	mv *.tsv data
+	mv *.csv data
+	mv *.png plot
+	mv *.html rest_files

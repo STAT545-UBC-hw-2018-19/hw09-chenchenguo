@@ -1,5 +1,5 @@
 ---
-title: "Information on words which start and end with same word"
+title: "Information on words which start and end with same letter"
 author: "Chenchen Guo"
 date: "11-26-2018"
 output:
@@ -13,7 +13,7 @@ On most *nix systems, the file `/usr/share/dict/words` contains a bunch of words
 
 The most frequent word length is 9.
 
-Here I sort out all words which start and end with the same letter, the file `/usr/share/dict/number` contains all words satisfied the sorting scheme. And it contains 9922 same words
+Here I sort out all words which start and end with the same letter, the file `/usr/share/dict/number` contains all words satisfied the sorting scheme. And it contains 0 same words
 
 In order to list the distribution of these words which have same starting and ending letter, I generated a picture to see the distribution.
 
