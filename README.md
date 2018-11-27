@@ -44,16 +44,20 @@ Implemented automation
     lettercount.rmd to indicate the information based on words sorting
 
 -   Results:![*Fig. 1* A histogram of words numbers(start and end with
-    same letter) for each letter](numbhistogram.png)
+    same letter) for each
+    letter](D:\Introduction%20to%20R\hw09-chenchenguo\hw09-chenchenguo\plot\numbhistogram.png)
 
 Content
 -------
 
 | Content                   | Link                                                                                       |
 |---------------------------|--------------------------------------------------------------------------------------------|
-| Readme file of Homework 9 | [Readme](https://github.com/STAT545-UBC-students/hw08-chenchenguo/blob/master/README.md)   |
-| Source code               | [Makefile](https://github.com/STAT545-UBC-students/hw08-chenchenguo/blob/master/bcl/app.R) |
-| Rest files                | [files](https://github.com/STAT545-UBC-students/hw08-chenchenguo/tree/master/bcl)          |
+| Readme file of Homework 9 | [Readme](https://github.com/STAT545-UBC-students/hw09-chenchenguo/blob/master/README.md)   |
+| Makefile                  | [Makefile](https://github.com/STAT545-UBC-students/hw09-chenchenguo/blob/master/Makefile)  |
+| Source code               | [src](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/src)            |
+| Plots                     | [Plot](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/plot)          |
+| reports files             | [doc](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/doc)            |
+| Rest data files           | [files](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/data%20files) |
 
 References
 ----------
