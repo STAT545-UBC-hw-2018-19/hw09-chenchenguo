@@ -44,8 +44,7 @@ Implemented automation
     lettercount.rmd to indicate the information based on words sorting
 
 -   Results:![*Fig. 1* A histogram of words numbers(start and end with
-    same letter) for each
-    letter](D:\Introduction%20to%20R\hw09-chenchenguo\hw09-chenchenguo\plot\numbhistogram.png)
+    same letter) for each letter](numbhistogram.png)
 
 Content
 -------

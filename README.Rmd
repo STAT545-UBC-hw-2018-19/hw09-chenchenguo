@@ -32,7 +32,7 @@ To emphasize, this whole work is based on Jenny's [make-activity repo](https://g
   * Rmd file: apart from the original report.rmd, here generate a lettercount.rmd to indicate the information 
   						based on words sorting
   
-  * Results:![*Fig. 1* A histogram of words numbers(start and end with same letter) for each letter](D:\Introduction to R\hw09-chenchenguo\hw09-chenchenguo\plot\numbhistogram.png)
+  * Results:![*Fig. 1* A histogram of words numbers(start and end with same letter) for each letter](numbhistogram.png)
   
   
   
