@@ -70,19 +70,19 @@ Implemented automation
 </table>
 
 -   Results:![*Fig. 1* A histogram of words numbers(start and end with
-    same letter) for each letter](numbhistogram.png)
+    same letter) for each letter](./plot/numbhistogram.png)
 
 Content
 -------
 
-| Content                   | Link                                                                                       |
-|---------------------------|--------------------------------------------------------------------------------------------|
-| Readme file of Homework 9 | [Readme](https://github.com/STAT545-UBC-students/hw09-chenchenguo/blob/master/README.md)   |
-| Makefile                  | [Makefile](https://github.com/STAT545-UBC-students/hw09-chenchenguo/blob/master/Makefile)  |
-| Source code               | [src](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/src)            |
-| Plots                     | [Plot](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/plot)          |
-| reports files             | [doc](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/doc)            |
-| Rest data files           | [files](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/data%20files) |
+| Content                   | Link                                                                                          |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| Readme file of Homework 9 | [Readme](https://github.com/STAT545-UBC-students/hw09-chenchenguo/blob/master/README.md)      |
+| Makefile                  | [Makefile](https://github.com/STAT545-UBC-students/hw09-chenchenguo/blob/master/Makefile)     |
+| Source code               | [src](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/src)               |
+| Plots                     | [Plot](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/plot)             |
+| reports files             | [rest files](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/rest_files) |
+| Data files                | [files](https://github.com/STAT545-UBC-students/hw09-chenchenguo/tree/master/data)            |
 
 References
 ----------
