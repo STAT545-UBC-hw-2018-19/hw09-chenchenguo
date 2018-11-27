@@ -1,7 +1,7 @@
 all: data_dir report.html lettercount.html
 
 clean:
-	rm -rf data rest_files plot *.txt *.tsv *.csv *.html *.md *.png
+	rm -rf data rest_files plot *.txt *.tsv *.csv *.html report.md lettercount.md *.png
 
 data_dir:
 	mkdir data
