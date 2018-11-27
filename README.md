@@ -35,13 +35,39 @@ Makefile requirements
 Implemented automation
 ----------------------
 
--   R script file: generate two files(samechar.csv, number.tsv)
-    samechar.csv contains all words which start and end with the same
-    letter number.tsv counts the number of samechar words for each
-    letter
+-   R script file: samecharacter.r charhistogram.r generate two files(
+    samechar.csv, number.tsv)
+
+| File         | content                                                     |
+|--------------|-------------------------------------------------------------|
+| samechar.csv | contains all words which start and end with the same letter |
+| number.tsv   | counts the number of samechar words for each letter         |
 
 -   Rmd file: apart from the original report.rmd, here generate a
     lettercount.rmd to indicate the information based on words sorting
+
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>report.rmd</td>
+<td>indicated the original word length soring information</td>
+</tr>
+<tr class="even">
+<td>lettercount.rmd</td>
+<td>indicated new information of words with same starting and ending letter</td>
+</tr>
+</tbody>
+</table>
 
 -   Results:![*Fig. 1* A histogram of words numbers(start and end with
     same letter) for each letter](numbhistogram.png)
